@@ -48,7 +48,7 @@ config = {
         # We are using HTTPS
         "ELASTICSEARCH_SCHEME": "https",
         # Override the elasticsearch host to point to the internal cluster
-        "ELASTICSEARCH_HOST": "harmony-search-cluster.{{ K8S_HARMONY_NAMESPACE }}.svc.cluster.local",
+        "ELASTICSEARCH_HOST": "{{ K8S_HARMONY_ES }}.{{ K8S_HARMONY_NAMESPACE }}.svc.cluster.local",
         # Disable the per-namespace elasticsearch instance
         "RUN_ELASTICSEARCH": False,
         # The list of indexes is defined in:
